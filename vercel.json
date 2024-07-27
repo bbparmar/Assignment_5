@@ -2,9 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "Assignment_5/server.js",
+      "src": "Assignment-5/server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["Assignment_5/modules/**", "Assignment-5/Data/**", "Assignment-5/public/css/**", "Assignment-5/views/**"] }
+      "config": { 
+        "includeFiles": [
+          "Assignment-5/modules/**", 
+          "Assignment-5/Data/**", 
+          "Assignment-5/public/css/**", 
+          "Assignment-5/views/**"
+        ] 
+      }
     }
   ],
   "routes": [
