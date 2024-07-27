@@ -13,7 +13,7 @@ const data = require("./modules/collegeData.js");
 
 const app = express();
 
-const HTTP_PORT = process.env.PORT || 8080;
+const HTTP_PORT = "https://assignment-5-self.vercel.app/";
 
 // Configure Handlebars
 app.engine(".hbs", exphbs.engine({
