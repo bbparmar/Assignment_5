@@ -3,117 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Demo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: #333;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #fff;
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .image-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .image-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .image-section div {
-            flex: 1;
-            text-align: center;
-        }
-    </style>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css">
 </head>
 <body>
-    <div class="content">
-        <h1>HTML Demo</h1>
-        <div class="section">
-            <h2>Section 1: Basic HTML Elements</h2>
-            <p>This is a demonstration of basic HTML elements.</p>
-            <ul>
-                <li>Apples</li>
-                <li>Bananas</li>
-                <li>Carrots</li>
-                <li>Bread</li>
-                <li>Milk</li>
-            </ul>
-            <ol>
-                <li>Rice</li>
-                <li>Pasta</li>
-                <li>Chicken</li>
-                <li>Eggs</li>
-                <li>Butter</li>
-            </ol>
+      <div class="container">
+        <div class="section mt-4">
+            <h2>Section 1: Text</h2>
+            <p>This section contains a paragraph of text. You can add more text here as needed.</p>
         </div>
-        <div class="section">
-            <h2>Section 2: HTML Forms</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input class="form-control" type="text" id="name" name="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input class="form-control" type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message"></textarea>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </form>
+        <div class="section mt-4">
+            <h2>Section 2: Images</h2>
+            <img src="https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2024/04/Lamborghini-Huracan-STJ-01-TAkinshete.jpg" alt="Placeholder image" class="img-fluid">
         </div>
-        <div class="section">
-            <h2>Section 3: Tables</h2>
-            <h3>Cities of the world</h3>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>City</th>
-                        <th>Country</th>
-                        <th>Population</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>London</td>
-                        <td>United Kingdom</td>
-                        <td>8.9 Million</td>
-                    </tr>
-                    <tr>
-                        <td>Manchester</td>
-                        <td>United Kingdom</td>
-                        <td>553 Thousand</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Employee Name</h3>
-            <table class="table table-striped">
+        <div class="section mt-4">
+            <h2>Section 3: Table</h2>
+            <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th>First Name</th>
@@ -135,32 +41,29 @@
                 </tbody>
             </table>
         </div>
-        <div class="section">
+        <div class="section mt-4">
             <h2>Section 4: Video</h2>
             <video controls width="100%">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <source src="https://videos.pexels.com/video-files/4560094/4560094-sd_960_506_24fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="section image-section">
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe">
-                <p>Snowboarder in halfpipe</p>
-            </div>
-            
-        </div>
-        <div class="section">
+        <div class="section mt-4">
             <h2>Section 5: Audio</h2>
             <audio controls>
-                <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
-                <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
+                <source src="https://pixabay.com/sound-effects/lamborghini-urus-racing-sound-effect-163336/" type="audio/mpeg">
+                <source src="https://pixabay.com/sound-effects/lamborghini-urus-racing-sound-effect-163336/" type="audio/ogg">
                 Your browser does not support the audio element.
             </audio>
             <p>This section includes an HTML5 audio player with sample audio files. The audio player allows users to play, pause, and control the volume of the audio. You can use the provided MP3 or OGG files as the audio source, or replace them with your own preferred audio files.</p>
         </div>
     </div>
-    <footer>
+    <footer class="mt-4">
         <p>&copy; 2024 Bliss Parmar</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-jrOrQ5y1rLO6aKq3eJLMggmO9Fmjv5W5E72D6Dh1zwPzebw/j6t6sSROK5g/7KgG" crossorigin="anonymous"></script>
 </body>
 </html>
